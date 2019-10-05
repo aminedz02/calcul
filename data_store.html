@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <h1>data store</h1>
+    <td><textarea cols="39" id="output"></textarea></><br>
+    <script type="text/javascript">
+    var name = localStorage.getItem("name");
+    var bottle_price = localStorage.getItem("bottle_price");
+    var fardo_number = localStorage.getItem("fardo_number");
+    document.getElementById('output').innerHTML = 'name: ' + name + ' bottle price: ' +
+    + bottle_price + ' DA ' + 'fardo number: ' + fardo_number + ' DA' ;
+    </script>
+    <tr>
+
+    </tr>
+  </body>
+</html>

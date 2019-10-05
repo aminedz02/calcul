@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+      <link rel="stylesheet" href="app.css">
+    <title>Client List</title>
+  </head>
+
+  <body>
+
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">
+        <i class="fas fa-book-open text-primary"></i> My<span class="text-primary">Client</span>List</h1>
+
+      <form id="book-form">
+
+        <div class="form-group">
+          <label for="name">Name/الإسم</label>
+          <input type="text" id="name" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="bprix">Bottle Price/سعر القارورة</label>
+          <input type="text" id="bprix" class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="fnum">Fardo Number/عدد الفاردوات</label>
+          <input type="text" id="fnum" class="form-control">
+        </div>
+
+              <div>
+          <tr>
+            <td><input class="btn btn-primary btn-block" type="button" name="" value="calc/حساب" onclick="sum();"></td>
+          </tr>
+          <textarea cols="39" id="put" class="form-control"></textarea>
+        </div>
+        <input type="submit" value="Add Client" class="btn btn-primary btn-block">
+
+      </form>
+
+      <table class="table table-striped mt-5">
+        <thead>
+          <tr>
+            <th>name</th>
+            <th>bprix</th>
+            <th>fnum</th>
+            <th>fcost</th>
+            <th>time</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+  </div>
+
+    <script src="app-es6.js"></script>
+
+  </body>
+</html>

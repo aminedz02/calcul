@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="normalize.min.css">
+    <script type="text/javascript" src="ap.js"></script>
+  </head>
+  <body>
+      <tr>
+        <div class="btn">
+          <a href="home.html">
+            <button class="btn btn-primary btn-block" type="button" name="button">home</button>
+          </a>
+        </div>
+      </tr>
+    <div class="container mt-4">
+      <h1 class="display-4 text-center">water</h1>
+      <hr>
+
+    <form class="form-group" action="" method="post">
+
+        <div class="form-group">
+          <label for="btl_num">how many botle in hour:</label>
+          <input class="form-control" type="text" name="pass" value="900"id="btl_num">
+        <div class="form-group">
+          <label for="h_num">how many hour in a day :</label>
+          <input class="form-control" type="text" name="pass" value="1"id="h_num">
+        </div>
+
+
+
+
+        <tr>
+            <td>one pte price:</td>
+            <td> <input class="form-control" type="text" name="valur" value="3" id="pte_btl"> </td>
+        </tr>
+        <tr>
+            <td>one cover price</td>
+            <td> <input class="form-control" type="text" name="valur" value="2" id="cover"> </td>
+        </tr>
+        <tr>
+            <td>emabalage totale</td>
+            <td> <input class="form-control" type="text" name="valur" value="3" id="embalage"> </td>
+        </tr>
+        <tr>
+            <td>puissance in kwh</td>
+            <td> <input class="form-control" type="text" name="valur" value="80" id="elt"> </td>
+        </tr>
+        <tr>
+            <td>price selling one bottle</td>
+            <td> <input class="form-control" type="text" name="valur" value="18" id="pri_sell"> </td>
+        </tr>
+         <tr>
+            <td>enter month : </td>
+            <td> <input class="form-control" type="text" name="valur" value="1" id="mo"> </td>
+        </tr>
+         <tr>
+            <td>enter year: </td>
+            <td> <input class="form-control" type="text" name="valur" value="1" id="yr"> </td>
+        </tr>
+        <tr>
+          <td><input class="btn btn-primary btn-block" type="button" value="calculate" id="submit" onclick="getdata();"></td>
+        </tr>
+
+      </table>
+    </form>
+    </div>
+<div class="ta">
+    <p>  <textarea class='form-control' rows="4"  cols="48" id="ot"></textarea></p>
+    </div><br>
+    <div class="form-group">
+    <p>  <textarea class="form-control"  rows="13"  cols="48" id="output"></textarea></p>
+    </div>
+  </body>
+</html>
